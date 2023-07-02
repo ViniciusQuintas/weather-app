@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+    <link rel="shortcut icon" href="" type="image/x-icon" id="favicon">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Weather</title>
+</head>
+
+<body class="overflow-hidden">
+    <main class="flex flex-col w-screen h-screen bg-cover bg-no-repeat bg-center lg:block">
+        <div class="text-gray-50 flex justify-between w-4/5 my-0 mx-auto py-3 mb-4lg:my-0 lg:mx-0 lg:px-8 lg:w-3/5">
+            <h2 class="font-bold tracking-wider text-2xl">Weather</h2>
+            <img class="img-clima hidden lg:block -mt-5" src="">
+            <button id="btn-details" class="bg-gray-900 mt-0.5 py-1 px-5 text-gray-100 font-bold outline-none rounded lg:hidden z-20">Detalhes</button>
+        </div>
+
+        <section class="flex flex-col my-14 lg:w-3/5 lg:mt-10">
+            <div class="flex justify-center items-center flex-col lg:h-screen lg:max-h-96">
+                <img class="img-clima text-center lg:hidden" src="">
+                <div class="flex items-center mt-4 text-gray-100 flex-col lg:text-center">
+                    <h2 id="temp" class="font-semibold text-gray-200 mr-2 text-5xl lg:text-8xl mb-15"></h2>
+                    <div>
+                        <h3 id="city" class="font-normal my-3 text-2xl lg:text-5xl text-center"></h3>
+                        <span class="sm:text-2xl lg:mt-4 font-thin" id="hora"></span> -
+                        <span class="sm:text-2xl lg:mt-4 font-thin" id="data"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <aside class="lg:absolute lg:right-0 lg:top-0 lg:w-2/5 lg:h-full lg:flex lg:flex-col lg:justify-center lg:bg-black lg:bg-opacity-30 lg:backdrop-blur-md lg:px-10 z-0">
+            <form class="flex flex-col justify-center items-center mb-14 w-full">
+                <input class="pl-3 py-1.5 bg-gray-100 text-gray-800 font-bold outline-none rounded my-1 placeholder:text-gray-600 w-full max-w-md xl:max-w-7xl"
+                    type="text" placeholder="Pesquise uma cidade">
+                <button id="btn-search"
+                    class="py-1.5 bg-gray-900 text-gray-100 font-bold outline-none rounded w-full max-w-md xl:max-w-7xl">Pesquisar</button>
+            </form>
+
+            <div class="hidden lg:block">
+                <h3 class="text-gray-100 font-bold">Detalhes do clima</h3>
+                <ul>
+                    <li class="my-5 flex justify-between w-full text-gray-300">Descrição: <span 
+                            class="font-bold text-gray-200 capitalize descricao"></span></li>
+                    <li class="my-5 flex justify-between w-full text-gray-300">Umidade do ar: <span
+                            class="font-bold text-gray-200 umidade">0</span></li>
+                    <li class="my-5 flex justify-between w-full text-gray-300">Visibilidade: <span
+                            class="font-bold text-gray-200 visibilidade">0</span></li>
+                    <li class="my-5 flex justify-between w-full text-gray-300">Velocidade do vento: <span
+                            class="font-bold text-gray-200 velocidade">0</span></li>
+                </ul>
+            </div>
+        </aside>
+
+        <div id="details-mobile" class="absolute flex justify-center items-center top-0 -right-[400px] w-full max-w-sm h-screen z-10 px-10 bg-black bg-opacity-30 backdrop-blur-md ease-in-out duration-500 lg:hidden sm:px-5">
+            <ul class="w-full">
+                <li class="my-5 flex justify-between w-full text-gray-300">Descrição: <span
+                        class="font-bold text-gray-200 capitalize flex-wrap descricao"></span></li>
+                <li class="my-5 flex justify-between w-full text-gray-300 flex-wrap">Umidade do ar: <span
+                        class="font-bold text-gray-200 umidade">0</span></li>
+                <li class="my-5 flex justify-between w-full text-gray-300 flex-wrap">Visibilidade: <span
+                        class="font-bold text-gray-200 visibilidade">0</span></li>
+                <li class="my-5 flex justify-between w-full text-gray-300 flex-wrap">Velocidade do vento: <span class="font-bold text-gray-200 velocidade">0</span></li>
+            </ul>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+    
+
+</body>
+
+</html>
