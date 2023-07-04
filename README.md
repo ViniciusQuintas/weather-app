@@ -8,7 +8,7 @@ Este projeto é um web app que permite aos usuários pesquisar as condições me
 A página possui os seguintes recursos relacionados ao design e funcionalidade:
 
 - ## Desing
-  - O design do aplicativo da Web é responsivo e compatível com dispositivos móveis, graças ao uso das classes utilitárias do Tailwind CSS para layout e estilo.
+  - O design do aplicativo Web é responsivo e compatível com dispositivos móveis, graças ao uso das classes utilitárias do Tailwind CSS para layout e estilo.
   - A imagem de fundo da seção principal muda dinamicamente com base na descrição do clima obtida da API, criando uma experiência visual envolvente para os usuários.
   - Exibição do nome da cidade, temperatura atual, data e hora.
   - Ícone representando o clima atual da cidade.
