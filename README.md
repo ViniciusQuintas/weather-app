@@ -57,7 +57,7 @@ Para usar esse web app na sua máquina local siga estas etapas:
 - ## Importante
   - A chave da API OpenWeatherMap e da API Unsplash foram fornecidas apenas como exemplo. Recomenda-se substituí-las por sua própria chave de API para garantir acesso ininterrupto aos dados meteorológicos e as imagens.
   
-Sinta-se à vontade para modificar o código, adicionar novos recursos ou fazer melhorias de acordo com suas necessidade e preferências.
+Sinta-se à vontade para modificar o código, adicionar novos recursos ou fazer melhorias de acordo com suas necessidades e preferências.
 
 # Contribuição
 Se você deseja contribuir para o desenvolvimento desse projeto, siga os seguintes passos:
